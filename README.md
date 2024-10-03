@@ -1,6 +1,6 @@
 # snekomancer
 
-[Smaug the Worm](image.png)
+![Smaug the Worm](image.png)
 
 Python Practice
 
