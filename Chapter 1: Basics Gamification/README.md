@@ -2,7 +2,7 @@
 
 # Basics Gamification
 
-![Gandalf let's go on an adventure](../images/gandalf1.png)
+![Gandalf let's go on an adventure](../images/gandalf1.webp)
 
 ## 1. Variables
 
@@ -122,4 +122,134 @@ while mana > 0:
     mana -= 1
 
 print("You are out of mana")
+```
+
+## 5. Functions
+
+Functions allow you to organize your code into reusable blocks.
+
+```python
+# Example
+def greet_player():
+  print("Welcome, brave adventurer!")
+
+greetPlayer() # Call the function
+```
+
+### Gamified Example:
+
+You are creating a function to calculate damage during a battle.
+
+```python
+def calculate_damage(strength, weapon_power):
+  return strength * weapon_power
+
+strength = 10
+weapon_power = 3
+
+damage = calculate_damage(strength, weapon_power)
+
+print("You dealt", damage, "damage to the enemy.")
+```
+
+## 6. Lists
+
+Lists are used to store multiple items in a single variable.
+
+```python
+# Example
+
+inventory = ["sword", "shield", "potion", "spellbook"]
+```
+
+### Gamified Example:
+
+You are managing your inventory in a game.
+
+```python
+inventory = ["Magic Wand", "Healing Potion", "Ancient Key"]
+
+print("Current Inventory: ", inventory)
+
+print("You have picked up a new item!")
+
+inventory.append("Scroll of Fire")
+
+print("Updated Inventory: ", inventory)
+```
+
+## 7. Dictionaries
+
+Dicitionaries store key-value pairs.
+
+```python
+# Example
+player_stats = {
+    "health": 100,
+    "mana": 50,
+    "level": 2,
+}
+```
+
+### Gamified Example:
+
+You are keeping track of your character’s stats in a game.
+
+```python
+
+player_stats = {
+    "health": 100,
+    "mana": 75,
+    "level": 3,
+}
+
+print("Player stats:")
+for stat, value in player_stats.items():
+    print(f"{stat}: {value}")
+
+# Level up the player
+player_stats["health"] *= .2
+player_stats["mana"] *= .5
+player_stats["level"] += 1
+print("\nAfter level up:", player_stats)
+```
+
+## 8. Classes
+
+Classes are blueprints for creating objects (instances of the class).
+
+```python
+# Example
+class Character:
+    def __init__(self, name, health, mana, level):
+        self.name = name
+        self.health = health
+        self.mana = mana
+        self.level = level
+
+    def attack(self):
+      print(f"{self.name} attacks!")
+
+# Create a character
+hero = Character("Gandalf", 10000, 15000000, 100)
+hero.attack()
+```
+
+### Gamified Example:
+
+Create a class to reperesent a monster in a text-based game.
+
+```python
+class Monster:
+    def __init__(self, name, health):
+      self.name = name
+      self.health = health
+
+    def take_damage(self, damage):
+        self.health -= damage
+        print(f"{self.name} takes {damage} damage! Health left: {self.health}")
+
+# Create a monster
+goblin = Monster("Goblin", 100)
+goblin.take_damage(50)
 ```
