@@ -8,7 +8,7 @@
 
 ### Chapter One: Basics Gamification
 
-[Link](/Chapter%201:%20Basics%20Gamification/)
+[Link](/Chapter%201/)
 
 ### Chapter Two: File Handling
 
