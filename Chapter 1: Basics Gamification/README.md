@@ -2,7 +2,7 @@
 
 # Basics Gamification
 
-![Gandalf let's go on an adventure](../images/gandalf.png)
+![Gandalf let's go on an adventure](../images/gandalf1.png)
 
 ## 1. Variables
 
