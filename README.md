@@ -1,8 +1,10 @@
-# snekomancer
+# Snekomancer
 
 ![Smaug the Worm](/images/snek.png)
 
-## Python Practice
+## Python Datamancy
+
+> This is a collection of python examples for learning the basics of python using a gamified approach.
 
 ### Chapter One: Basics Gamification
 
