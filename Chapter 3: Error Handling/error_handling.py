@@ -1,9 +1,10 @@
 def safe_load_game():
     try:
         with open("game_save.text", "r") as file:
-            stat, value = line.strip().split(":")
-            player_stats[stat] = int(value)
-            print("Game loaded successfully!")
+            for line in file:
+                stat, value = line.strip().split(":")
+                player_stats[stat] = int(value)
+                print("Game loaded successfully!")
     except FileNotFoundError:
         print("No saved game found, starting fresh.")
     except ValueError:
