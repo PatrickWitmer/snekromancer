@@ -1,4 +1,4 @@
-# Snekomancer
+# Snekromancer
 
 ![Smaug the Worm](/images/snek.png)
 
